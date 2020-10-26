@@ -64,3 +64,11 @@ var firstChar = anotherOne.substring(0,1);
 var rest = anotherOne.substring(1);
 var finalString = firstChar.toUpperCase() + rest.toLowerCase();
 console.log(firstChar,rest,finalString)
+
+//2.e)
+/*  Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco.
+    Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).*/
+
+var $anotherOne = 'Hello World';
+var position = $anotherOne.indexOf(' ');
+console.log(position);
