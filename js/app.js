@@ -53,3 +53,14 @@ var _teenCharWord = '1234567890';
 var startPoint = _teenCharWord.length-3;
 var _lastThree = _teenCharWord.substring(startPoint);
 console.log(_lastThree);
+
+//2.d)
+/*  Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string
+    con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado
+    en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).*/
+
+var anotherOne = 'cualquiera';
+var firstChar = anotherOne.substring(0,1);
+var rest = anotherOne.substring(1);
+var finalString = firstChar.toUpperCase() + rest.toLowerCase();
+console.log(firstChar,rest,finalString)
