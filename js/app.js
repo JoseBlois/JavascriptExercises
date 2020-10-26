@@ -43,3 +43,13 @@ console.log(upperCase);
 var teenCharWord = 'programming';
 var fiveCharWord = teenCharWord.substring(0,5);
 console.log(fiveCharWord);
+
+//2.c)
+/*  Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string
+    con los últimos 3 caracteres guardando el resultado en una nueva variable
+    (utilizar substring)*/
+
+var _teenCharWord = '1234567890';
+var startPoint = _teenCharWord.length-3;
+var _lastThree = _teenCharWord.substring(startPoint);
+console.log(_lastThree);
