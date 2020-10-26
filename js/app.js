@@ -25,7 +25,7 @@ var concatString = firstString + secondString;
 var _string1 = 'car';
 var _string2 = 'wheel';
 var howLong = _string1.length + _string2.length;
-console.log(_string1+': ' + _string1.length + ', ' + _string2 + ': ' + _string2.length + ' , How long: '+ howLong);
+console.log(_string1+': ' + _string1.length + ', ' + _string2 + ': ' + _string2.length + ' ,How long: '+ howLong);
 
 //2.a)
 /*  Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto
@@ -59,7 +59,7 @@ console.log(_lastThree);
     con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado
     en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).*/
 
-var anotherOne = 'cualquiera';
+var anotherOne = 'Deutschland';
 var firstChar = anotherOne.substring(0,1);
 var rest = anotherOne.substring(1);
 var finalString = firstChar.toUpperCase() + rest.toLowerCase();
@@ -72,3 +72,19 @@ console.log(firstChar,rest,finalString)
 var $anotherOne = 'Hello World';
 var position = $anotherOne.indexOf(' ');
 console.log(position);
+
+//2.f)
+/*  Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio
+    entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string
+    que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula
+    (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).*/
+
+var sentence = 'canadian breakfast';
+var start = sentence.substring(0,1);
+var spacePoint = sentence.indexOf(' ');
+var firstHalf = sentence.substring(1,spacePoint+1);
+var secondStart = sentence.substring(spacePoint+1, spacePoint+2);
+var secondHalf = sentence.substring(spacePoint+2);
+var finalSentence = start.toUpperCase() + firstHalf.toLowerCase() + secondStart.toUpperCase() + secondHalf.toLowerCase();
+console.log(finalSentence);
+
