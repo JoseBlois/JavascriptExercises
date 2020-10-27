@@ -79,12 +79,12 @@ console.log(position);
     que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula
     (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).*/
 
-var sentence = 'canadian breakfast';
-var start = sentence.substring(0,1);
-var spacePoint = sentence.indexOf(' ');
-var firstHalf = sentence.substring(1,spacePoint+1);
-var secondStart = sentence.substring(spacePoint+1, spacePoint+2);
-var secondHalf = sentence.substring(spacePoint+2);
+var Sentence = 'canadian breakfast';
+var start = Sentence.substring(0,1);
+var spacePoint = Sentence.indexOf(' ');
+var firstHalf = Sentence.substring(1,spacePoint+1);
+var secondStart = Sentence.substring(spacePoint+1, spacePoint+2);
+var secondHalf = Sentence.substring(spacePoint+2);
 var finalSentence = start.toUpperCase() + firstHalf.toLowerCase() + secondStart.toUpperCase() + secondHalf.toLowerCase();
 console.log(finalSentence);
 
@@ -162,3 +162,46 @@ var Age = 20;
     } else if (75 <= Age){
         alert('Anciano')
     }
+
+//5.a)
+/*  Crear un array que contenga 5 palabras y recorrer dicho array utilizando
+    un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.*/
+
+var $array = ['this','is','using','a','loop'];
+for(var i = 0; i < $array.length; i++){
+    alert($array[i]);
+}
+
+//5.b)
+/*  Al array anterior convertir la primera letra de cada palabra en mayúscula
+    y mostrar una alerta por cada palabra modificada.*/
+
+for(var i = 0; i < $array.length; i++){
+    var firstCharacter = $array[i].substring(0,1);
+    var otherChars = $array[i].substring(1);
+    $array[i] = firstCharacter.toUpperCase() + otherChars;
+    alert($array[i]);
+}
+
+//5.c)
+/*  Crear una variable llamada “sentence” que tenga un string vacío, luego al
+    array del punto a) recorrerlo con un bucle for para ir guardando cada palabra
+    dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.*/
+
+var sentence = '';
+for(var i = 0; i < $array.length; i++){
+    sentence += $array[i] + ' ';
+};
+alert(sentence);
+
+//5.d)
+/*  Crear una array vacío y con un bucle for de 10 repeticiones llenar el array con el número
+    de la repetición, es decir que al final de la ejecución del bucle for deberia haber 10 elementos
+    dentro del array, desde el número 0 hasta al numero 9. Mostrar por la consola del navegador el al
+    array final (utilizar console.log).*/
+
+var emptyArray = [];
+for(var p = 0; p < 10; p++){
+    emptyArray[p] = p;
+}
+console.log(emptyArray);
