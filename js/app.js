@@ -129,3 +129,36 @@ console.log(everyMonth);
 //3.g) Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
 var mayToNovember = months.slice(4,11);
 console.log(mayToNovember);
+
+//4.a)
+/*  Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es
+    mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta
+    con el mensaje “Lower than 0,5”*/
+
+var randomNumber = Math.random()
+    if(randomNumber >= 0.5){
+        alert('Greater than 0,5');
+    } else {
+        alert('Lower than 0,5');
+    }
+
+//4.b)
+/*  Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre
+    los siguientes mensajes de alerta:*/
+
+var Age = 20;
+    if(Age < 2){
+        alert('Bebe');
+    } else if (2 <= Age && 12 >= Age){
+        alert('Niño');
+    } else if (13 <= Age && 19 >= Age){
+        alert('Adolecente');
+    } else if (20 <= Age && 30 >= Age){
+        alert('Joven');
+    } else if (31 <= Age && 60 >= Age){
+        alert('Adulto');
+    } else if (61 <= Age && 75 >= Age){
+        alert('Adulto Mayor');
+    } else if (75 <= Age){
+        alert('Anciano')
+    }
