@@ -223,7 +223,7 @@ console.log(result);
     el valor NaN como resultado*/
 
 function suma(a,b){
-    if( || typeof b !== 'number'){
+    if( typeof a !== 'number' || typeof b !== 'number'){
         alert('Theres an error with one of the parameters');
         return NaN;
     }
